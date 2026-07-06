@@ -1,15 +1,18 @@
 :root {
-  --bg: #faf8f5;
-  --surface: #ffffff;
-  --text: #1a1a1a;
-  --text-muted: #5c5c5c;
-  --accent: #c45d3a;
-  --accent-soft: #f4e8e3;
-  --border: #e8e2db;
-  --shadow: 0 4px 24px rgba(26, 26, 26, 0.06);
+  --bg: #0f1117;
+  --surface: #1a1d27;
+  --surface-inset: #14161e;
+  --text: #e8eaed;
+  --text-muted: #9aa0a6;
+  --accent: #e07a5f;
+  --accent-hover: #c96850;
+  --accent-soft: rgba(224, 122, 95, 0.14);
+  --border: #2a2f3a;
+  --shadow: 0 4px 24px rgba(0, 0, 0, 0.4);
   --radius: 12px;
   --font-serif: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
   --font-sans: "SF Pro Text", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color-scheme: dark;
 }
 
 *,
@@ -39,7 +42,7 @@ a {
 }
 
 a:hover {
-  color: #9a4328;
+  color: var(--accent-hover);
 }
 
 .site-header {
@@ -100,7 +103,7 @@ a:hover {
 .tab-nav button[aria-selected="true"] {
   color: var(--text);
   background: var(--accent-soft);
-  box-shadow: inset 0 0 0 1px rgba(196, 93, 58, 0.25);
+  box-shadow: inset 0 0 0 1px rgba(224, 122, 95, 0.35);
 }
 
 main {
@@ -185,7 +188,7 @@ main {
 }
 
 .btn:hover {
-  background: #9a4328;
+  background: var(--accent-hover);
   color: #fff;
 }
 
@@ -250,7 +253,7 @@ main {
 
 .card {
   padding: 1.25rem;
-  background: var(--bg);
+  background: var(--surface-inset);
   border: 1px solid var(--border);
   border-radius: calc(var(--radius) - 2px);
 }
