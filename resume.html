@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Resume — Your Name</title>
-  <meta name="description" content="Professional resume and experience.">
+  <title>Resume — Raymond J. Reynolds</title>
+  <meta name="description" content="Professional resume and experience for Raymond J. Reynolds.">
   <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
@@ -19,53 +19,77 @@
   </header>
 
   <main class="page-content">
-    <h1>Resume</h1>
-    <p class="page-intro">Your Name · City, State · you@email.com · linkedin.com/in/you</p>
+    <h1>Raymond J. Reynolds</h1>
+    <p class="page-intro">
+      <a href="https://linkedin.com/in/raymondjreynolds">linkedin.com/in/raymondjreynolds</a>
+    </p>
 
     <section class="section">
-      <h2>Summary</h2>
-      <p>
-        Brief professional summary. Describe your focus, strengths, and what kind of work
-        you are looking for or currently doing.
-      </p>
-    </section>
+      <h2>Professional Experience</h2>
 
-    <section class="section">
-      <h2>Experience</h2>
-      <h3>Senior Software Engineer · Company Name</h3>
-      <p class="meta">2022 — Present · Remote</p>
+      <h3>Software Engineer · BioIntellisense</h3>
+      <p class="meta">Palo Alto, CA · Feb. 2025 — Mar. 2026</p>
       <ul>
-        <li>Led development of a customer-facing product used by thousands of users.</li>
-        <li>Improved reliability and performance across core services.</li>
-        <li>Mentored engineers and contributed to hiring and onboarding.</li>
+        <li>Lead refactor of AWS data ingestion pipeline to reduce size-related data loss to 0%.</li>
+        <li>Implemented cloud-native data ingestion procedures for several new health tracking metrics.</li>
       </ul>
 
-      <h3>Software Engineer · Previous Company</h3>
-      <p class="meta">2019 — 2022 · City, State</p>
+      <h3>Software Engineer · Google</h3>
+      <p class="meta">Durham, NC · May 2022 — Sept. 2024</p>
       <ul>
-        <li>Built features across the stack using modern web technologies.</li>
-        <li>Collaborated with design and product to ship iteratively.</li>
+        <li>Co-lead of security partner integration for new cloud networking offering on GCP.</li>
+        <li>Built Cloud VPN business analytics pipeline; crafted queries and dashboards to monitor performance metrics both internally and externally; discovered billing bug recovering ~$10k per month.</li>
+      </ul>
+
+      <h3>Software Engineer · Microsoft</h3>
+      <p class="meta">Redmond, WA · Nov. 2019 — April 2022</p>
+      <ul>
+        <li>Built and tested growth model to optimize resource allocation and consumption within Azure SQL backend; reduced physical disk footprint by 22 petabytes worldwide.</li>
+        <li>Lead design and implementation of real-time telemetry pipelines to feed into load balancing algorithms.</li>
+      </ul>
+
+      <h3>Software Engineer · Cisco</h3>
+      <p class="meta">San Jose, CA · June 2018 — Oct. 2019</p>
+      <ul>
+        <li>Built clustering classification tool to expedite network debugging time by 15%.</li>
+        <li>Implemented a proof-of-concept telemetry pipeline comparing SQL vs. NoSQL style databases.</li>
       </ul>
     </section>
 
     <section class="section">
       <h2>Education</h2>
-      <h3>B.S. Computer Science · University Name</h3>
-      <p class="meta">2015 — 2019</p>
+      <h3>B.S. Electrical Engineering · Stanford University</h3>
+      <p class="meta">Palo Alto, CA</p>
     </section>
 
     <section class="section">
       <h2>Skills</h2>
+      <p>
+        Python, C++/C#, Go, SQL, NoSQL, R, Java, Terraform, Distributed Systems, Machine Learning,
+        Cloud Networking, Docker, AWS tools (S3, SQS, Lambda), GCP tools (BigQuery, Cloud Functions,
+        GCS), gRPC, protobuf, REST API, CI/CD
+      </p>
+    </section>
+
+    <section class="section">
+      <h2>Extracurricular Experience</h2>
+
+      <h3>Cofounder · Helmetrics</h3>
+      <p class="meta">Palo Alto, CA · June 2018 — Oct. 2019</p>
       <ul>
-        <li>Languages: JavaScript, Python, TypeScript</li>
-        <li>Tools: Git, GitHub, Linux, CI/CD</li>
-        <li>Interests: Systems design, developer experience, technical writing</li>
+        <li>Designed and built prototype gyroscopic hardware and analysis software for helmet force monitoring.</li>
+      </ul>
+
+      <h3>Electrical Team · Stanford Solar Car Project</h3>
+      <p class="meta">Palo Alto, CA · Sept. 2015 — June 2018</p>
+      <ul>
+        <li>Designed steering wheel and radio integration circuits; testing and validation of battery management system; prototyped autonomous driving systems using LIDAR and ultrasonic sensors.</li>
       </ul>
     </section>
   </main>
 
   <footer class="site-footer">
-    <p>&copy; <span id="year"></span> Your Name</p>
+    <p>&copy; <span id="year"></span> Raymond J. Reynolds</p>
   </footer>
 
   <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
