@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Name — Personal Site</title>
+  <meta name="description" content="Personal website with resume, cookbook, and cars.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1 class="site-title">Your Name</h1>
+    <p class="site-tagline">Engineer, home cook, and car enthusiast.</p>
+
+    <nav class="tab-nav" aria-label="Site sections">
+      <button type="button" data-tab-target="home" aria-selected="true">Home</button>
+      <button type="button" data-tab-target="resume" aria-selected="false">Resume</button>
+      <button type="button" data-tab-target="cookbook" aria-selected="false">Cookbook</button>
+      <button type="button" data-tab-target="cars" aria-selected="false">Cars</button>
+    </nav>
+  </header>
+
+  <main>
+    <section class="tab-panel is-active" data-tab-panel="home">
+      <div class="hero">
+        <h2>Welcome</h2>
+        <p>
+          This is a personal site template built for GitHub Pages. Use the tabs above to
+          preview each section, or open the full pages for more detail.
+        </p>
+      </div>
+    </section>
+
+    <section class="tab-panel" data-tab-panel="resume">
+      <article class="panel-card">
+        <h2>Resume</h2>
+        <p>
+          A concise overview of experience, skills, and education. Replace the placeholder
+          content on the full resume page with your own history.
+        </p>
+        <p class="meta">Highlights: Software engineering · Product development · Leadership</p>
+        <a class="btn" href="resume.html">View full resume</a>
+      </article>
+    </section>
+
+    <section class="tab-panel" data-tab-panel="cookbook">
+      <article class="panel-card">
+        <h2>Cookbook</h2>
+        <p>
+          Favorite recipes, notes, and kitchen experiments. The cookbook page is set up with
+          a simple card layout you can extend over time.
+        </p>
+        <p class="meta">Featured: Weeknight pasta · Sourdough basics · Seasonal sides</p>
+        <a class="btn" href="cookbook.html">Browse cookbook</a>
+      </article>
+    </section>
+
+    <section class="tab-panel" data-tab-panel="cars">
+      <article class="panel-card">
+        <h2>Cars</h2>
+        <p>
+          Projects, maintenance logs, and notes on vehicles you own or admire. Swap in your
+          own photos and specs on the cars page.
+        </p>
+        <p class="meta">Current: Daily driver · Weekend project · Dream garage</p>
+        <a class="btn" href="cars.html">Explore cars</a>
+      </article>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name. Hosted on GitHub Pages.</p>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

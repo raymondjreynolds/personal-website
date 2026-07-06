@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookbook — Your Name</title>
+  <meta name="description" content="Personal cookbook and favorite recipes.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-tagline"><a href="index.html">← Back home</a></p>
+    <nav class="tab-nav" aria-label="Site sections">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="cookbook.html" aria-current="page">Cookbook</a>
+      <a href="cars.html">Cars</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <h1>Cookbook</h1>
+    <p class="page-intro">Recipes I return to often. Duplicate a card below to add more.</p>
+
+    <div class="recipe-grid">
+      <article class="card">
+        <h3>Weeknight Garlic Pasta</h3>
+        <p>Fast, forgiving, and easy to scale. Ready in about 20 minutes.</p>
+        <p class="meta">Serves 2 · 20 min</p>
+      </article>
+
+      <article class="card">
+        <h3>Simple Roast Chicken</h3>
+        <p>Crisp skin, juicy meat, minimal prep. Great for meal prep.</p>
+        <p class="meta">Serves 4 · 1 hr</p>
+      </article>
+
+      <article class="card">
+        <h3>Everyday Sourdough</h3>
+        <p>Notes on starter maintenance, bulk ferment timing, and bake schedule.</p>
+        <p class="meta">Makes 1 loaf · overnight</p>
+      </article>
+
+      <article class="card">
+        <h3>Seasonal Salad</h3>
+        <p>Template for greens, crunch, acid, and something salty on top.</p>
+        <p class="meta">Serves 2 · 10 min</p>
+      </article>
+    </div>
+
+    <section class="section" style="margin-top: 2rem;">
+      <h2>Recipe template</h2>
+      <h3>Title</h3>
+      <p class="meta">Prep time · Cook time · Yield</p>
+      <h3>Ingredients</h3>
+      <ul>
+        <li>Ingredient one</li>
+        <li>Ingredient two</li>
+        <li>Ingredient three</li>
+      </ul>
+      <h3>Instructions</h3>
+      <ol>
+        <li>Step one.</li>
+        <li>Step two.</li>
+        <li>Step three.</li>
+      </ol>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cars — Your Name</title>
+  <meta name="description" content="Cars, projects, and maintenance notes.">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <p class="site-tagline"><a href="index.html">← Back home</a></p>
+    <nav class="tab-nav" aria-label="Site sections">
+      <a href="index.html">Home</a>
+      <a href="resume.html">Resume</a>
+      <a href="cookbook.html">Cookbook</a>
+      <a href="cars.html" aria-current="page">Cars</a>
+    </nav>
+  </header>
+
+  <main class="page-content">
+    <h1>Cars</h1>
+    <p class="page-intro">Garage notes, project status, and vehicles on the wish list.</p>
+
+    <div class="car-grid">
+      <article class="card">
+        <h3>Daily Driver</h3>
+        <p>Year Make Model — reliable commuter, regular maintenance log.</p>
+        <p class="meta">Mileage: 00,000 · Last service: Month Year</p>
+      </article>
+
+      <article class="card">
+        <h3>Weekend Project</h3>
+        <p>Year Make Model — current work: suspension refresh, interior cleanup.</p>
+        <p class="meta">Status: In progress</p>
+      </article>
+
+      <article class="card">
+        <h3>Dream Garage</h3>
+        <p>A short list of cars you would love to own, drive, or restore someday.</p>
+        <p class="meta">Always evolving</p>
+      </article>
+
+      <article class="card">
+        <h3>Maintenance Log</h3>
+        <p>Template entry: oil change, tire rotation, inspection dates, and notes.</p>
+        <p class="meta">Add entries as you go</p>
+      </article>
+    </div>
+
+    <section class="section" style="margin-top: 2rem;">
+      <h2>Project notes</h2>
+      <h3>Current focus</h3>
+      <p>Describe what you are working on, parts on order, and next steps.</p>
+      <h3>Completed</h3>
+      <ul>
+        <li>Brake pads and rotors — Month Year</li>
+        <li>Fluid flush — Month Year</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; <span id="year"></span> Your Name</p>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
